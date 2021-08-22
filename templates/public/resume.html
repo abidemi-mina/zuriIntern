@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color:lightgray;
+      color:darkcyan;
+      text-transform: capitalize;
+      font-weight: bolder;
+      
+    }
+    
+    </style>
+    
+</head>
+
+    <header>
+    </header>
+<body>
+    <img src="{% static 'public/images/zuri-logo.png' %}" alt="">
+      <p>
+        To Create your resume , you have to fill in all the form below . thank you
+      </p>
+
+    <div class="container-fluid">
+        <div class="row">
+     
+      
+          <div class="col-md-9 col-lg-9 py-5 bg-light">
+            <form method="POST" class="p-5 bg-white border" enctype="multipart/form-data">
+                {% include 'public/form-reuse.html' with form=new %}
+                <input type="submit" value="Submit" class="btn btn-success">
+      
+            </form>
+      
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
