@@ -6,7 +6,7 @@ from django.contrib import messages
 
 def resume(request):
     if request.method =='POST':
-        resume = ResumeForm(request.POST. request.FILES)
+        resume = ResumeForm(request.POST, request.FILES)
         if resume.is_valid():
             user = resume.save(commit=False)
             user.save

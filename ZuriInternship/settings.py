@@ -15,7 +15,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-=qyd2(8k!1ozgzjp*i$q_+sdk=b$6!qzo$x0#nnko8#2d2i70t
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'abbyzuri.herokuapp.com'
+    # 'abbyzuri.herokuapp.com'
 ]
 
 
