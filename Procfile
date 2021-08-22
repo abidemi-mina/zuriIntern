@@ -1,1 +1,1 @@
-web: gunicorn ZuriIntership.wsgi 
+web: gunicorn config.wsgi 
